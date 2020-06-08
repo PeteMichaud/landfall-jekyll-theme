@@ -20,6 +20,6 @@ searchable: false
     "date"     : "{{ entry.date }}"
   },{% endunless %}{% endfor %}
   {
-    title: "~~!!!~~"
+    "title"    : "~~!!!~~"
   }
 ]
