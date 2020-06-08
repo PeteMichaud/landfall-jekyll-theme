@@ -1,14 +1,21 @@
-<input type="text" id="search-input" placeholder="Search site..">
-<ul id="results-container"></ul>
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search site..">
+</div>
 
 <script>
-let sjs = SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-    noResultsText: 'No results found',
-    limit: 10,
-    exclude: ['~~!!!~~']
-});
+    var pages = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: '/search.json'
+    });
+
+    $('#search-input').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 2
+    },
+    {
+        name: 'pages',
+        source: pages
+    });
 </script>
