@@ -1,2 +1,13 @@
 <input type="text" id="search-input" placeholder="Search site..">
 <ul id="results-container"></ul>
+
+<script>
+let sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+});
+</script>
