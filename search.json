@@ -18,5 +18,8 @@ searchable: false
     "tags"     : "{{ entry.tags | join: ', ' }}",
     "url"      : "{{ site.baseurl }}{{ entry.url }}",
     "date"     : "{{ entry.date }}"
-  }{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}
+  },{% endunless %}{% endfor %}
+  {
+    title: "~~!!!~~"
+  }
 ]
