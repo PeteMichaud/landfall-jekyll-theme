@@ -1,21 +1,3 @@
 <div id="search-container">
     <input type="text" id="search-input" placeholder="Search site..">
 </div>
-
-<script>
-    var pages = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.whitespace,
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        prefetch: '/search.json'
-    });
-
-    $('#search-input').typeahead({
-        hint: true,
-        highlight: true,
-        minLength: 2
-    },
-    {
-        name: 'pages',
-        source: pages
-    });
-</script>
