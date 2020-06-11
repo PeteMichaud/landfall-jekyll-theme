@@ -41,4 +41,16 @@ blockquote {
   }
 }
 
-
+.inline-toc {
+  font-size: .85em;
+  label {
+    font-weight: 500;
+  }
+  ol, ul {
+    list-style: none;
+    padding-left:0;
+    li {
+      margin-bottom: .25em;
+    }
+  }
+}
