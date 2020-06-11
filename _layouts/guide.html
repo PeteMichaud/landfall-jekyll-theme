@@ -23,12 +23,12 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto order-2">
 
         {{ content }}
 
       </div>
-      <nav class="col inline_toc">
+      <nav class="col inline_toc order-1">
         <div class="sticky-top">
           <label>Jump to Section</label>
           {% assign max_level = page.max_toc_level | default: 3 %}
