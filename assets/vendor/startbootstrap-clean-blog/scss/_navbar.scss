@@ -40,10 +40,10 @@
       > li.nav-item {
         > a {
           padding: 10px 20px;
-          color: $white;
+          //color: $white;
           &:focus,
           &:hover {
-            color: fade-out($white, .2);
+            color: fade-out($primary, .2);
           }
         }
       }
