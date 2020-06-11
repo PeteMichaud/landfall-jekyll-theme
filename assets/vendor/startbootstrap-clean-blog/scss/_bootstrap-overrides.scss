@@ -44,7 +44,7 @@ blockquote {
 }
 
 .inline-toc {
-  &.nav {
+  &.navbar, &.nav {
     padding-left:15px;
     .nav-link {
       display: inline;
