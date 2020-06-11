@@ -1,6 +1,12 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 
+    $('body').attr({
+        'data-spy': 'scroll',
+        'data-target': '#inline-toc',
+        'data-offset': 100
+    });
+
   var pages = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
