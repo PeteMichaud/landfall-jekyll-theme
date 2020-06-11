@@ -1,7 +1,7 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 
-    $('body').attr({
+    $('body').scrollspy({
         'data-spy': 'scroll',
         'data-target': '#inline-toc',
         'data-offset': 100
