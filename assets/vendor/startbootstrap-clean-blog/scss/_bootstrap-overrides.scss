@@ -27,8 +27,10 @@
 }
 
 blockquote {
-  border-left: 5px solid #efefef;
+  border-left: 5px solid #f1efdf;
   padding-left: 1rem;
+  color: #6f6c46;
+  border-radius: 3px;
 }
 
 .guide-content {
@@ -43,7 +45,7 @@ blockquote {
 
 .inline-toc {
   .sticky-top {
-    margin-top:30px;
+    padding-top:35px;
   }
   font-size: .85em;
   label {
