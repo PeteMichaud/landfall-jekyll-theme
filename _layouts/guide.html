@@ -17,9 +17,9 @@ layout: default
             <h1>{{ page.title }}</h1>
           </div>
         </div>
-      </div>
-      <div class="col guide-title-art">
+        <div class="col guide-title-art">
 
+        </div>
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
         {{ content }}
       </div>
-      <nav class="col d-none d-sm-block inline_toc">
+      <nav class="col d-none d-md-block inline_toc">
         <div class="sticky-top">
           <label>Jump to Section</label>
           {% assign max_level = page.max_toc_level | default: 3 %}
