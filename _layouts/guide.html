@@ -11,9 +11,6 @@ layout: default
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col guide-title-art">
-
-        </div>
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
             <span class="subheading">Worldbuilder's Guide to</span>
@@ -21,22 +18,23 @@ layout: default
           </div>
         </div>
       </div>
+      <div class="col guide-title-art">
+
+      </div>
     </div>
   </header>
 
   <div class="container">
     <div class="row">
-      <nav class="col inline_toc">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ content }}
+      </div>
+      <nav class="col d-none d-sm-block inline_toc">
         <div class="sticky-top">
           <label>Jump to Section</label>
           {% assign max_level = page.max_toc_level | default: 3 %}
           {% include toc.html html=content sanitize=true id="guide_toc" h_min=1 h_max=max_level %}
         </div>
       </nav>
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-      </div>
     </div>
   </div>
