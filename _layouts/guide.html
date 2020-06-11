@@ -23,17 +23,17 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto order-sm-2">
-
-        {{ content }}
-
-      </div>
-      <nav class="col inline_toc order-sm-1">
+      <nav class="col inline_toc">
         <div class="sticky-top">
           <label>Jump to Section</label>
           {% assign max_level = page.max_toc_level | default: 3 %}
           {% include toc.html html=content sanitize=true id="guide_toc" h_min=1 h_max=max_level %}
         </div>
       </nav>
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+
+      </div>
     </div>
   </div>
