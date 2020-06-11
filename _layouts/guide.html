@@ -34,7 +34,7 @@ layout: default
         <div class="sticky-top">
           <label>Jump to Section</label>
           {% assign max_level = page.max_toc_level | default: 3 %}
-          {% include toc.html html=content sanitize=true item_class="nav-item" id="guide-toc" h_min=1 h_max=max_level %}
+          {% include toc.html html=content sanitize=true item_class="nav-link" id="guide-toc" h_min=1 h_max=max_level %}
         </div>
       </nav>
     </div>
