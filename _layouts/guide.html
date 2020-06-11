@@ -12,8 +12,8 @@ layout: default
     <div class="container">
       <div class="row">
         {% if page.header_image_offset %}
-          {{ assign v_pos = page.header_image_offset | append: 'px'}}
-        {% else %}}
+          {{ assign v_pos = page.header_image_offset | append: 'px' }}
+        {% else %}
           {{ assign v_pos = "center" }}
         {% endif %}}
         <div class="col-lg-9 col-md-10 mx-auto page-heading-container" style="background-position: center {{ v_pos }}; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
