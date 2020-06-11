@@ -46,6 +46,10 @@ blockquote {
 .inline-toc {
   &.nav {
     padding-left:15px;
+    .nav-link {
+      display: inline;
+      padding: 0;
+    }
   }
   .sticky-top {
     padding-top:35px;
