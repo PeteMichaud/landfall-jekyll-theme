@@ -49,6 +49,9 @@ blockquote {
     .nav-link {
       display: inline;
       padding: 0;
+      &.active {
+        color: $primary;
+      }
     }
   }
   .sticky-top {
