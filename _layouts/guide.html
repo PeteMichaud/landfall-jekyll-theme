@@ -11,7 +11,12 @@ layout: default
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-md-10 mx-auto page-heading-container" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+        {% if page.header_image_offset %}
+          {{ assign v_pos = page.header_image_offset | append: 'px'}}
+        {% else %}}
+          {{ assign v_pos = "center" }}
+        {% endif %}}
+        <div class="col-lg-9 col-md-10 mx-auto page-heading-container" style="background-position: center {{ v_pos }}; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
           <div class="page-heading">
             <span class="subheading">Worldbuilder's Guide to</span>
             <h1>{{ page.title }}</h1>
