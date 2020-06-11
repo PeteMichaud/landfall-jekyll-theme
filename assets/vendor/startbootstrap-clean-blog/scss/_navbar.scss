@@ -31,10 +31,10 @@ $brand-dark-blue: #3f5367;
     //background: transparent;
     .navbar-brand {
       padding: 10px 20px;
-      color: $white;
+      color: $gray-200;
       &:focus,
       &:hover {
-        color: fade-out($primary, .2);
+        color: fade-out($white, .2);
       }
     }
     .navbar-nav {
