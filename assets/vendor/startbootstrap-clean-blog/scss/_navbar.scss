@@ -45,6 +45,7 @@ $brand-dark-blue: #3f5367;
           &:focus,
           &:hover {
             color: $white;
+            text-decoration: underline;
           }
         }
       }
