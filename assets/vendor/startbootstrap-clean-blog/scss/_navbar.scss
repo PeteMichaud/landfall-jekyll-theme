@@ -34,7 +34,7 @@ $brand-dark-blue: #3f5367;
       color: $gray-200;
       &:focus,
       &:hover {
-        color: fade-out($white, .2);
+        color: $white;
       }
     }
     .navbar-nav {
@@ -44,7 +44,7 @@ $brand-dark-blue: #3f5367;
           color: $gray-200;
           &:focus,
           &:hover {
-            color: fade-out($white, .2);
+            color: $white;
           }
         }
       }
