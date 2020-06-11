@@ -44,6 +44,9 @@ blockquote {
 }
 
 .inline-toc {
+  &.nav {
+    padding-left:15px;
+  }
   .sticky-top {
     padding-top:35px;
   }
