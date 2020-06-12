@@ -74,3 +74,7 @@ blockquote {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+.tag-list {
+  @extend .text-right;
+}
