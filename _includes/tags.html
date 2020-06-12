@@ -2,7 +2,7 @@
 {% if tag_count > 0 %}
 <div class="tag-list">
     {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}" class="badge badge-light">{{ tag }}</a>
+    <a href="/tag/{{ tag }}" class="badge badge-light">{{ tag }}</a>
     {% endfor %}
 </div>
 {% endif %}
