@@ -1,4 +1,5 @@
-{% if page.tags %}
+{% assign tag_count = page.tags | size %}
+{% if tag_count > 0 %}
 <div class="tag-list">
     {% for tag in page.tags %}
     <a href="/tags/{{ tag }}" class="badge badge-light">{{ tag }}</a>
