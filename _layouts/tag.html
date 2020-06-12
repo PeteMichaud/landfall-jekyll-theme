@@ -1,0 +1,18 @@
+---
+layout: wiki
+---
+
+<h1>Tag: #{{page.tag}}</h1>
+<ul>
+    {% for p in site.pages %}
+    {% if p.tags contains page.tag %}
+    <li><a class="post" href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% for p in site.posts %}
+    {% if p.tags contains page.tag %}
+    <li><a class="post" href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
