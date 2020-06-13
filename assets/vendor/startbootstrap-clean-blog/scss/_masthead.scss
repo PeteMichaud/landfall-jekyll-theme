@@ -41,7 +41,7 @@ header.masthead {
     h1 {
       font-size: 50px;
       margin-top: 0;
-      @media only screen and (min-width: 576px) {
+      @media only screen and (min-width: 768px) {
         &.page-title-shadow {
           text-shadow:  1px 1px 1px #5b7792,
                         1px 2px 1px #2d3d4b,
