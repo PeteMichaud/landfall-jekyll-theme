@@ -82,6 +82,9 @@ blockquote {
     margin:0;
     font-weight: 900;
     li {
+      &.nav-parent {
+        border-bottom: 1px solid $gray-100;
+      }
       padding:0;
       margin:0;
       margin-bottom: 0.625rem;

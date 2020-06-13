@@ -15,11 +15,23 @@ layout: default
         <nav class="sticky-top kb-nav">
           <ul>
             <li class="nav-parent">
-              <a href="{{page.parent.path}}">{{ page.parent.title }}</a>
+              <a href="{{page.parent.path}}">
+                {{ page.parent.title }}
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
             </li>
             {% for nav_link in page.nav_tree %}
             <li>
-              <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>{{ nav_link.title }}</a>
+              <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>
+                {{ nav_link.title }}
+                {% if nav_link.has_children %}}
+                  {% if nav_link.children %}
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  {% endif %}
+                {% endif %}
+              </a>
                 {% if nav_link.children %}
                   <ul>
                     {% for ch_link in nav_link.children %}
