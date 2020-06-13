@@ -62,6 +62,9 @@ blockquote {
 .breadcrumb, .kb-nav {
   font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75em;
+  #search-container {
+    float:right;
+  }
 }
 
 #inline-toc {
