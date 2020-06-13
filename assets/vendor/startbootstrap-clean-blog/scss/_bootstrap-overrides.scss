@@ -74,8 +74,13 @@ blockquote {
 .kb-nav {
   font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75em;
+  margin-right:1em;
+  a {
+    display: inline-block;
+  }
   i.fa {
     float:right;
+    font-weight:400;
   }
   ul {
     list-style: none;
