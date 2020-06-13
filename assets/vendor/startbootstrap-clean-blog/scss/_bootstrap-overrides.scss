@@ -83,14 +83,16 @@ blockquote {
   & > ul {
     padding:0;
     margin:0;
-    font-weight: 900;
+    font-weight: 700;
     li {
       &.nav-parent {
         border-bottom: 1px solid $gray-100;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
       }
       padding:0;
       margin:0;
-      margin-bottom: 0.625rem;
+      margin-bottom: 1rem;
       & > ul {
         padding-left:1em;
         margin:.5em 0;
