@@ -25,25 +25,29 @@ header.masthead {
       padding: 50px 0 30px;
     }
   }
+
+  .page-heading-container {
+    @media only screen and (max-width: 576px) {
+      background:none !important;
+    }
+  }
+
   .page-heading,
   .site-heading {
     text-align: center;
     h1 {
       font-size: 50px;
       margin-top: 0;
-      @media only screen and (max-width: 576px) {
+      @media only screen and (min-width: 576px) {
         &.page-title-shadow {
-          text-shadow: none;
+          text-shadow:  1px 1px 1px #5b7792,
+                        1px 2px 1px #2d3d4b,
+                        1px 3px 1px #273742,
+                        1px 8px 6px rgba(16,16,16,0.4),
+                        1px 12px 10px rgba(16,16,16,0.2),
+                        1px 25px 15px rgba(16,16,16,0.2),
+                        1px 30px 60px rgba(16,16,16,0.4);
         }
-      }
-      &.page-title-shadow {
-        text-shadow:  1px 1px 1px #5b7792,
-                      1px 2px 1px #2d3d4b,
-                      1px 3px 1px #273742,
-                      1px 8px 6px rgba(16,16,16,0.4),
-                      1px 12px 10px rgba(16,16,16,0.2),
-                      1px 25px 15px rgba(16,16,16,0.2),
-                      1px 30px 60px rgba(16,16,16,0.4);
       }
     }
     .subheading {
