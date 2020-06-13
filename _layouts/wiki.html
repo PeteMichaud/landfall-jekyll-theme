@@ -30,7 +30,8 @@ layout: default
           Wiki Nav
         </div>
       </nav>
-      <div class="col-lg-9">
+      <div class="col-lg-9 kb-content">
+        {% include breadcrumb.html %}
         {% include tags.html %}
 
         {{ content }}
