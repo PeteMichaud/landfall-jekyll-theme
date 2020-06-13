@@ -7,14 +7,14 @@ $brand-dark-blue: #3f5367;
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
-    color: $gray-800;
+    color: $gray-200;
   }
   .navbar-toggler {
     font-size: 12px;
     font-weight: 800;
     padding: 13px;
     text-transform: uppercase;
-    color: $gray-800;
+    color: $gray-200;
   }
   .navbar-nav {
     > li.nav-item {
