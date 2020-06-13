@@ -176,7 +176,12 @@ blockquote {
 .breadcrumb {
   .breadcrumb-item {
     .fa {
-      color: $gray-400;
+      color: $gray-700;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $primary;
+      }
     }
   }
 }
