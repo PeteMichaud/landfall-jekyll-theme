@@ -172,3 +172,11 @@ blockquote {
     }
   }
 }
+
+.breadcrumb {
+  .breadcrumb-item {
+    .fa {
+      color: $gray-400;
+    }
+  }
+}
