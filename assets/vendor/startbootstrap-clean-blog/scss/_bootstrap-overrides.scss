@@ -76,11 +76,11 @@ blockquote {
   font-size: .75em;
   margin-right:1em;
   a {
-    display: inline-block;
+    display: block;
   }
   i.fa {
     float:right;
-    font-weight:400;
+    //font-weight:400;
   }
   ul {
     list-style: none;
