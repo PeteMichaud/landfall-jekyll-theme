@@ -7,11 +7,11 @@ $(function () {
         'data-offset': 100
     });
 
-  var pages = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: '/search.json'
-  });
+  // var pages = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.whitespace,
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   prefetch: '/search.json'
+  // });
 
   // $('#search-input').typeahead({
   //       hint: true,
