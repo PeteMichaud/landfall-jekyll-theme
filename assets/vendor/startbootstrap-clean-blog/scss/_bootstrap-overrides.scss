@@ -127,6 +127,7 @@ blockquote {
       padding: 0;
       &.active {
         color: $primary;
+        text-decoration: underline;
       }
     }
   }
@@ -135,7 +136,7 @@ blockquote {
   }
   font-size: .85em;
   label {
-    font-weight: 900;
+    font-weight: 700;
   }
   ol, ul {
     list-style: none;
