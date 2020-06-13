@@ -13,7 +13,22 @@ layout: default
     <div class="row">
       <nav class="col">
         <nav class="sticky-top kb-nav">
-          Wiki Nav
+          <ul>
+            {% for nav_link in page.nav_tree %}
+            <li>
+              <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>{{ nav_link.title }}</a>
+                {% if nav_link.children %}
+                  <ul>
+                    {% for ch_link in page.nav_tree %}
+                    <li>
+                      <a href="{{ch_link.path}}">{{ ch_link.title }}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
         </nav>
       </nav>
       <div class="col-lg-9 kb-content">
