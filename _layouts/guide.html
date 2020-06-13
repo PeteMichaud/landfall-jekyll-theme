@@ -41,8 +41,10 @@ layout: default
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          {% assign max_level = page.max_toc_level | default: 3 %}
-          {% include toc.html html=content sanitize=true class="collapse navbar-collapse" anchor_class="nav-link" id="guide-toc" h_min=1 h_max=max_level %}
+          <div class="collapse navbar-collapse">
+            {% assign max_level = page.max_toc_level | default: 3 %}
+            {% include toc.html html=content sanitize=true anchor_class="nav-link" id="guide-toc" h_min=1 h_max=max_level %}
+          </div>
         </div>
       </nav>
     </div>
