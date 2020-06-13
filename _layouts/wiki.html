@@ -24,6 +24,10 @@ layout: default
 
   <div class="container">
     <div class="row">
+      <div class="col"></div>
+        {% include breadcrumb.html %}
+    </div>
+    <div class="row">
       <nav class="col">
         <div class="sticky-top">
           {% include search.html %}
@@ -31,7 +35,6 @@ layout: default
         </div>
       </nav>
       <div class="col-lg-9 kb-content">
-        {% include breadcrumb.html %}
         {% include tags.html %}
 
         {{ content }}
