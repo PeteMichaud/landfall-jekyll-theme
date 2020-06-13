@@ -14,6 +14,9 @@ layout: default
       <nav class="col">
         <nav class="sticky-top kb-nav">
           <ul>
+            <li class="nav-parent">
+              <a href="{{page.parent.path}}">{{ page.parent.title }}</a>
+            </li>
             {% for nav_link in page.nav_tree %}
             <li>
               <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>{{ nav_link.title }}</a>
