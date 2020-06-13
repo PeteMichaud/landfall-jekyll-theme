@@ -19,7 +19,7 @@ layout: default
               <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>{{ nav_link.title }}</a>
                 {% if nav_link.children %}
                   <ul>
-                    {% for ch_link in page.nav_tree %}
+                    {% for ch_link in nav_link.children %}
                     <li>
                       <a href="{{ch_link.path}}">{{ ch_link.title }}</a>
                     </li>
