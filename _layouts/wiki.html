@@ -4,25 +4,10 @@ layout: default
 
 {% include breadcrumb.html %}
 
-<!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-lg-9">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
+<header class="masthead" style="display:none; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+</header>
+{% endif %}
 
   <div class="container">
     <div class="row">
@@ -33,6 +18,7 @@ layout: default
         </div>
       </nav>
       <div class="col-lg-9 kb-content">
+        <h1>{{ page.title }}</h1>
         {% include tags.html %}
 
         {{ content }}
