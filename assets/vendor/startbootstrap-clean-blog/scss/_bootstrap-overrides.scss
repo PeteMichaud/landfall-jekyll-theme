@@ -88,7 +88,8 @@ blockquote {
   &.completed {
     text-decoration: line-through;
     &::after {
-      content: ' (Done)'
+      content: ' (Done)';
+      text-decoration: none;
     }
   }
 }
