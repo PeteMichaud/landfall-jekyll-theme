@@ -78,3 +78,17 @@ blockquote {
 .tag-list {
   text-align: right;
 }
+
+.todo {
+  padding: .2em;
+  background-color: #fcf8e3;
+  span {
+    font-style: italic;
+  }
+  &.completed {
+    text-decoration: line-through;
+    &::after {
+      content: ' (Done)'
+    }
+  }
+}
