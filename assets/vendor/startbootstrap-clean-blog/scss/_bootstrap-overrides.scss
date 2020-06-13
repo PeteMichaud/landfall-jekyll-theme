@@ -116,8 +116,12 @@ blockquote {
 }
 
 #inline-toc {
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .75em;
+
   &.navbar, &.nav {
     padding-left:15px;
+    display: block;
     .nav-link {
       display: inline;
       padding: 0;
