@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include breadcrumb.html %}
+
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -23,10 +25,6 @@ layout: default
 
 
   <div class="container">
-    <div class="row">
-      <div class="col"></div>
-        {% include breadcrumb.html %}
-    </div>
     <div class="row">
       <nav class="col">
         <div class="sticky-top">
