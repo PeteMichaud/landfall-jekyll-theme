@@ -90,6 +90,7 @@ blockquote {
     &::after {
       content: ' (Done)';
       text-decoration: none;
+      display:inline-block;
     }
   }
 }
