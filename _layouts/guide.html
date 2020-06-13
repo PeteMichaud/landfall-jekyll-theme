@@ -32,14 +32,17 @@ layout: default
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-9 col-md-10 mx-auto guide-content">
+      <div class="col-lg-9 mx-auto guide-content">
         {{ content }}
       </div>
-      <nav class="col d-none d-md-block navbar" id="inline-toc">
+      <nav class="col navbar navbar-expand-lg" id="inline-toc">
         <div class="sticky-top">
           <label>Jump to Section</label>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           {% assign max_level = page.max_toc_level | default: 3 %}
-          {% include toc.html html=content sanitize=true anchor_class="nav-link" id="guide-toc" h_min=1 h_max=max_level %}
+          {% include toc.html html=content sanitize=true class="collapse navbar-collapse" anchor_class="nav-link" id="guide-toc" h_min=1 h_max=max_level %}
         </div>
       </nav>
     </div>
