@@ -23,6 +23,12 @@ $brand-dark-blue: #3f5367;
         font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
+        color: $gray-200;
+        &:focus,
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
       }
     }
   }
