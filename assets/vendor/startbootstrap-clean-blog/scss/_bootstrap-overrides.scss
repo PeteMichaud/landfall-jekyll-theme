@@ -77,10 +77,13 @@ blockquote {
   margin-right:1em;
   a {
     display: block;
+    &:hover {
+      text-decoration: none;
+    }
   }
   i.fa {
     float:right;
-    //font-weight:400;
+    color: $gray-600;
   }
   ul {
     list-style: none;
@@ -91,7 +94,7 @@ blockquote {
     font-weight: 700;
     li {
       &.nav-parent {
-        border-bottom: 1px solid $gray-100;
+        border-bottom: 1px solid $gray-300;
         padding-bottom: 1em;
         margin-bottom: 1em;
       }
