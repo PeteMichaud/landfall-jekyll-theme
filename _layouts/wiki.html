@@ -14,12 +14,14 @@ layout: default
       <nav class="col">
         <nav class="sticky-top kb-nav">
           <ul>
+            {% if page.parent %}
             <li class="nav-parent">
               <a href="{{page.parent.path}}">
                 {{ page.parent.title }}
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
               </a>
             </li>
+            {% endif %}
             {% for nav_link in page.nav_tree %}
             <li>
               <a href="{{nav_link.path}}" {% if nav_link.acive %}class="active"{% endif %}>
