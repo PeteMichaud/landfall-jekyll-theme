@@ -13,15 +13,15 @@ $(function () {
     prefetch: '/search.json'
   });
 
-  $('#search-input').typeahead({
-        hint: true,
-        highlight: true,
-        minLength: 2
-      },
-      {
-        name: 'pages',
-        source: pages
-      });
+  // $('#search-input').typeahead({
+  //       hint: true,
+  //       highlight: true,
+  //       minLength: 2
+  //     },
+  //     {
+  //       name: 'pages',
+  //       source: pages
+  //     });
 
 })
 
