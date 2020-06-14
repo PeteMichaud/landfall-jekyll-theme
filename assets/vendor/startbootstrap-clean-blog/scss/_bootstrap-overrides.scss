@@ -231,6 +231,8 @@ body {
 }
 
 .guide-card, .story-card {
-  height:8em;
-  object-fit: cover;
+  img.card-img-top {
+    height:8em;
+    object-fit: cover;
+  }
 }
