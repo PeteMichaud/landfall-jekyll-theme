@@ -40,12 +40,6 @@ blockquote {
   padding: 1em 3em;
   h1, h2, h3, h4, h5, h6 {
     margin-top: 1.2em;
-    &:first-child {
-      margin-top: 0;
-      margin-left: -1em;
-      padding-left: 1em;
-      border-left: 5px solid #72a6d8;
-    }
   }
 }
 
@@ -53,6 +47,14 @@ blockquote {
   @extend .page-content;
   padding: 1em 2em;
   margin-right:.75em;
+  h1, h2, h3, h4, h5, h6 {
+    &:first-child {
+      margin-top: 0;
+      margin-left: -1em;
+      padding-left: 1em;
+      border-left: 5px solid #72a6d8;
+    }
+  }
 }
 
 .breadcrumb {
