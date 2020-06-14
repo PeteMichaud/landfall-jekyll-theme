@@ -244,6 +244,8 @@ body {
 }
 
 .story-image-row {
-  margin-bottom:1em;
-  max-height: 75vh;
+  img {
+    margin-bottom:1em;
+    max-height: 75vh;
+  }
 }
