@@ -33,22 +33,11 @@ blockquote {
   border-radius: 3px;
 }
 
-.guide-content, .story-content {
+.guide-content, .story-content, .page-content {
   border: 1px solid #ece7d3;
   border-radius: 3px;
   background: #fbf9f2;
   padding: 1em 3em;
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.2em;
-  }
-}
-
-.kb-content {
-  border: 1px solid #ece7d3;
-  border-radius: 3px;
-  background: #fbf9f2;
-  padding: 1em 2em;
-  margin-right:.75em;
   h1, h2, h3, h4, h5, h6 {
     margin-top: 1.2em;
     &:first-child {
@@ -58,6 +47,12 @@ blockquote {
       border-left: 5px solid #72a6d8;
     }
   }
+}
+
+.kb-content {
+  @extend .page-content;
+  padding: 1em 2em;
+  margin-right:.75em;
 }
 
 .breadcrumb {
