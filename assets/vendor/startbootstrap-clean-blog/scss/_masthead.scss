@@ -31,6 +31,7 @@ header.masthead {
       background:none !important;
       .page-heading {
         padding: 2em 2em 0 2em;
+        margin-bottom: .5em;
       }
     }
   }
@@ -83,7 +84,8 @@ header.masthead {
       @include sans-serif-font;
     }
     .meta {
-      font-size: 20px;
+      font-size: .8em;
+      color: $gray-700;
       font-weight: 300;
       font-style: italic;
       @include serif-font;
