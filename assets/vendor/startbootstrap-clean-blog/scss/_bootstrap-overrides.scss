@@ -236,7 +236,9 @@ body {
     object-fit: cover;
   }
   &:hover {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
     border-color: $primary;
   }
 }
