@@ -22,7 +22,7 @@ header.masthead {
     padding: 200px 0 150px;
     color: #3f5367;
     @media only screen and (min-width: 768px) {
-      padding: 50px 0 30px;
+      padding: 2em;
     }
   }
 
@@ -30,7 +30,7 @@ header.masthead {
     @media only screen and (max-width: 768px) {
       background:none !important;
       .page-heading {
-        padding: 2em 0 0 0;
+        padding: 2em 2em 0 2em;
       }
     }
   }
