@@ -210,8 +210,14 @@ blockquote {
   }
 }
 
-.post-meta {
-  color: $gray-500;
-  font-style: italic;
-  font-size: .85em;
+.post-preview {
+  h2 {
+    margin-bottom:0;
+  }
+  .post-meta {
+    color: $gray-700;
+    font-style: italic;
+    font-size: .85em;
+    margin:0;
+  }
 }
