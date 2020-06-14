@@ -243,6 +243,16 @@ body {
   }
 }
 
+.gallery-card {
+  img.card-img-top {
+    height:50vh;
+    object-fit: contain;
+  }
+  &:hover {
+    border-color: $primary;
+  }
+}
+
 .story-image-row {
   img {
     margin-bottom:1em;
