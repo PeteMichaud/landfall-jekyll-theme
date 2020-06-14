@@ -19,10 +19,10 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto gallery-content">
+      <div class="col-lg-2 gallery-content">
 
         {% for img in page.gallery %}
-        <div class="card mb-3 gallery-card">
+        <div class="card mb-3 gallery-card col-4">
           <a href="{{ img.url }}">
             <img class="card-img-top" src="{{img.src}}" >
           </a>
