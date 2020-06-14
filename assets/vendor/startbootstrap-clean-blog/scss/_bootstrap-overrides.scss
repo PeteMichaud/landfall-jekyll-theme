@@ -235,4 +235,8 @@ body {
     height:8em;
     object-fit: cover;
   }
+  &:hover {
+    text-decoration: none;
+    border-color: $primary;
+  }
 }
