@@ -203,3 +203,15 @@ blockquote {
     margin: .25em .75em .5em 0;
   }
 }
+
+.page-heading {
+  h1 {
+    color: $brand-dark-blue;
+  }
+}
+
+.post-meta {
+  color: $gray-500;
+  font-style: italic;
+  font-size: .85em;
+}
