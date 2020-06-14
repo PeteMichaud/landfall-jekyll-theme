@@ -212,7 +212,8 @@ body {
   }
 }
 
-.page-heading {
+.post-heading, .page-heading {
+  padding:2em;
   h1 {
     color: $brand-dark-blue;
   }
